@@ -1,2 +1,30 @@
+quarkus:
+  application:
+    name: quarkus-concurrency-lab
+
+  http:
+    port: 8080
+
+  log:
+    level: INFO
+    console:
+      format: "%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{3.}] (%t) %s%e%n"
+      json: false
+
+  micrometer:
+    export:
+      prometheus:
+        enabled: true
+
+  smallrye-openapi:
+    path: /q/openapi
+    info-title: "Quarkus Concurrency Lab API"
+    info-version: "1.0.0"
+    info-description: "Virtual Threads vs Platform Threads benchmark"
+
+processing:
+  thread-pool:
+    size: 50
+
 greeting:
   message: "hello"
