@@ -6,7 +6,13 @@ Desenvolvido com **Java 21**, **Quarkus 3** e **Micrometer**, seguindo princípi
 
 ---
 
-## 📊 Arquitetura
+## 📊 Diagrama de Fluxo
+
+![Diagrama de fluxo](src/main/resources/images/fluxo.png)
+
+---
+
+## 🏗️ Arquitetura
 
 ```
 ┌─────────────────────────────────────────────────────────┐
